@@ -16,7 +16,10 @@ class HomePage extends StatelessWidget {
             ],
           ),
         ),
-        Image.asset("assets/images/cord.png", fit: BoxFit.cover),
+        Container(
+          constraints: BoxConstraints.expand(),
+          child: Image.asset("assets/images/cord.png", fit: BoxFit.cover),
+        ),
         Stack(
           children: <Widget>[
             Positioned(
